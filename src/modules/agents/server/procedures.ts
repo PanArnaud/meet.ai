@@ -118,7 +118,6 @@ export const agentsRouter = createTRPCRouter({
 
       return removedAgent;
     }),
-
   update: protectedProcedure
     .input(agentsUpdateSchema)
     .mutation(async ({ input, ctx }) => {
